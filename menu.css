@@ -74,13 +74,32 @@ body {
   margin: 0;
 }
 
+/* estilos para el boton de añadir */
+
 .card-menu button {
   width: 70px;
-  background-color: green;
+  background-color: rgb(11, 163, 11);
   border: none;
   border-radius: 12px;
   color: white;
   font-weight: bold;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.card-menu button:hover{
+  transform: scale(1.2);
+  background-color: rgb(5, 130, 11);
+}
+
+.card-menu .btn-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-menu button img {
+  display: none;
 }
 
 .card-menu .content-precio-btn {
@@ -103,5 +122,17 @@ body {
   /* estilos para el menu general */
   .menu {
     gap: 0.9rem;
+  }
+  /* estilos para el boton de añadir */
+  .card-menu .btn-card{
+    font-size: 0;
+  }
+  .card-menu .btn-card::after{
+    margin-left: 0;
+    content: url(./media/icons/add-cart.svg);
+    filter: invert(100%);
+  }
+  .card-menu button {
+    width: 40px;
   }
 }
