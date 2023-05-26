@@ -129,7 +129,7 @@ body {
   }
   .card-menu .btn-card::after{
     margin-left: 0;
-    content: url(./media/icons/add-cart.svg);
+    content: url(/CESDE/SGDP/media/icons/add-cart.svg);
     filter: invert(100%);
   }
   .card-menu button {
