@@ -13,10 +13,20 @@
       <section class="section-menu">
         <!-- input para el la busqueda de productos -->
         <header class="header-menu">
+          <!-- titulo del menu -->
           <h1 class="titulo">Menu</h1>
+          <!-- boton de busqueda del menu -->
           <div class="btn-search">
-            <input id="search" name="search" type="text" placeholder="Buscar" />
-            <img src="/CESDE/SGDP/media/icons/search.svg" alt="icon-search" />
+            <form autocomplete="off">
+              <div class="search">
+                <input
+                  type="text"
+                  id="btnSearch"
+                  name="btnSearch"
+                  placeholder="Buscar"
+                />
+              </div>
+            </form>
           </div>
         </header>
         <!-- menu con los elementos -->
@@ -33,9 +43,7 @@
               <!-- botton para añadir al carrito responsive -->
               <div class="content-precio-btn">
                 <span>$12.000</span>
-                <button class="btn-card">
-                  Añadir
-                </button>
+                <button class="btn-card">Añadir</button>
               </div>
             </div>
           </div>
