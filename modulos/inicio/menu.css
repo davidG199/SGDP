@@ -2,6 +2,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   font-size: 62.5%;
+  font-family: sans-serif;
 }
 
 /* estilos para el header del menu */
@@ -13,21 +14,13 @@ body {
   align-items: center;
   border-bottom: 0.1rem solid rgb(207, 207, 207);
   font-size: 1.8rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 .header-menu .titulo {
   margin: 0;
 }
 
 /* estilos para el boton de busqueda del menu */
-
-/* .btn-search form{
-  margin:auto;
-} */
-/* 
-.btn-search{
-  width: 300px;
-} */
 
 .btn-search form .search {
   display: flex;
@@ -75,13 +68,23 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.title-section{
+  font-size: 1.5rem;
+  display: flex;
+  margin-left: 2.25rem;
+  font-weight: bold;
+}
+.title-section p{
+  margin: 1rem 0;
+}
+
 /* estilos para la card */
 
 .card-menu {
   display: flex;
   flex-direction: column;
   width: 200px;
-  font-size: 1rem;
+  font-size: 0.92rem;
   height: 250px;
   background-color: rgb(248, 248, 248);
   border-radius: 12px;
@@ -158,7 +161,7 @@ body {
     width: 160px;
   }
   .card-menu .card-info p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
   /* estilos para el menu general */
   .menu {
