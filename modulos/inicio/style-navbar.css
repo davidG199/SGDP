@@ -1,0 +1,132 @@
+
+
+
+
+.atras {
+    
+    height: 100px;
+   background-color: #FFFFFF;
+   margin-top: 10px;
+   margin-bottom: 1.5rem;
+}
+.menu-contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; 
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;  
+}
+.logo {
+    font-size: 24px;
+    color: black;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-left: 0;
+    text-decoration: none;
+    
+
+}
+.menu-contenedor .contenedor-nav ul li {
+    position: relative;
+    float: left;
+    list-style: none;
+    top: 20px;
+}
+.menu-contenedor .contenedor-nav ul li a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px; 
+    font-weight: bold;  
+    padding: 12px;
+    color: black;
+    display: block;
+    text-decoration: none;
+    margin-left: 8px;
+    margin-bottom: 20px;
+    
+    
+}
+.menu-contenedor .contenedor-nav ul li a:hover {
+    color: rgb(124, 118, 118);
+    
+}
+#menu {
+    display: none;
+
+}
+
+.menu-carrito{
+    width: 25px;
+   
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+@media(max-width:475px) {
+
+
+
+/* 
+    .menu {
+        padding:  30px;
+    } */
+    .menu label {
+        display: initial;
+    }
+    .atras {
+        padding: 47px 0;
+    }
+
+    .menu .contenedor-nav {
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        right: 0%;
+        background-color: #2A394F;
+        display: none;
+
+    }
+
+    .menu .contenedor-nav ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .contenedor-nav {
+        
+        display: initial;
+        
+    }
+}
+
+.icono-carrito {
+   
+    width: 60px;
+    height: 60px;
+    background-color:#FFFFFF;
+    align-items: center;
+    display: flex;
+    border-radius: 60px;
+    justify-content: center;
+
+
+}
+.contenedor-nav{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+} 
+.imgLogo {
+    width: 100px;
+    height: 100px;
+   
+
+}
+
