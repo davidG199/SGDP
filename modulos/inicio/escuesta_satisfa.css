@@ -1,0 +1,36 @@
+.contenedor-form{
+    display: flex;
+    flex-direction: column;
+    width: 31.25rem;
+    font-size: 16px;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px 16px;
+}
+
+.contenedor-form .title-form {
+    text-align: center;
+    margin: 8px 0;
+}
+
+.contenedor-form a {
+    text-decoration: none;
+}
+
+.contenido-form{
+    display: flex;
+    flex-direction: row;
+    width: 10%;
+    margin: .625rem 0;
+    justify-content: start;
+}
+
+.contenido-form label {
+    margin-left: 20px;
+    font-size: .875rem;
+    font-weight: bold;
+}
+
+.contenedor-form form span {
+    margin-bottom: .75rem;
+}
