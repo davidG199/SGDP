@@ -179,7 +179,7 @@ body {
   }
   /* estilos para el menu general */
   .menu {
-    gap: 0.9rem;
+    gap: 2rem 0.9rem;
   }
   /* estilos para el boton de añadir */
   .card-menu .btn-card{
