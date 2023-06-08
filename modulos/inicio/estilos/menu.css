@@ -70,7 +70,6 @@ body {
 
 .section-menu {
   display: flex;
-  width: 100%;
   flex-flow: column wrap;
 }
 
@@ -135,7 +134,7 @@ body {
 
 .card-menu button {
   width: 70px;
-  background-color: rgb(11, 163, 11);
+  background-color: rgb(255, 202, 27);
   border: none;
   border-radius: 12px;
   color: white;
@@ -146,8 +145,8 @@ body {
 }
 
 .card-menu button:hover{
-  transform: scale(1.2);
-  background-color: rgb(5, 130, 11);
+  transform: scale(1.1);
+  background-color: rgb(255, 170, 27);
 }
 
 .card-menu .btn-card{
@@ -231,5 +230,8 @@ body {
   }
   .promociones {
     width: 100%;
+  }
+  .section-menu{
+    margin: 0 24px;
   }
 }

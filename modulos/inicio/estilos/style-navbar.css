@@ -1,0 +1,116 @@
+.atras {
+  height: 75px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 0.625rem;
+  margin-bottom: 1.5rem;
+  /* border-bottom: 1px solid rgb(207, 207, 207); */
+}
+.menu-contenedor {
+    border-bottom: 1px solid rgb(207, 207, 207);
+  color: white;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  height: 75px;
+}
+.logo {
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+  margin-left: 0;
+  text-decoration: none;
+}
+.menu-contenedor .contenedor-nav ul li {
+  position: relative;
+  float: left;
+  list-style: none;
+  top: 20px;
+}
+.menu-contenedor .contenedor-nav ul li a {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px;
+  color: black;
+  display: block;
+  text-decoration: none;
+  margin-left: 8px;
+  margin-bottom: 20px;
+  transition: all 150ms ease;
+}
+.menu-contenedor .contenedor-nav ul li a:hover {
+  background-color: rgb(242, 242, 242);
+  border-radius: 6px;
+}
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  margin-right: 32px;
+  transform: rotate(180deg);
+}
+
+.menu-contenedor label {
+  cursor: pointer;
+  display: none;
+}
+
+.icono-carrito {
+  width: 50px;
+  background-color: #ffffff;
+  align-items: center;
+  display: flex;
+  border-radius: 60px;
+  justify-content: center;
+  margin-left: .75rem;
+} 
+.contenedor-nav {
+  display: flex;
+  align-items: center;
+  /* margin-right: 20px; */
+}
+.imgLogo {
+  width: 70px;
+  height: 70px;
+}
+
+@media (max-width: 680px) {
+  
+  .menu-contenedor label {
+    display: initial;
+  }
+ 
+  .menu-contenedor .contenedor-nav {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    right: 0%;
+    background-color: white;
+    display: none;
+  }
+
+  .menu-contenedor .contenedor-nav ul li {
+    width: 100%;
+  }
+  .menu-contenedor .contenedor-nav ul li a{
+    padding: 6px 18px 6px 12px;
+    margin: 0 30px 12px 0;
+  }
+
+  #menu:checked ~ .contenedor-nav {
+    display: initial;
+  }
+
+  .icono-carrito{
+    height: 3.125rem;
+    margin-left: 1.675rem;
+  }
+}
+
