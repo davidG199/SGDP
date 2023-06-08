@@ -6,4 +6,6 @@ fase inicial del proyecto
 
 sistema para la organizacion de locales
 
+https://davidg199.github.io/SGDP/modulos/inicio/menu
+
 
