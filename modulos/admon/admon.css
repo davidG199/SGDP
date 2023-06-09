@@ -1,0 +1,273 @@
+
+  /* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para la interfaz completa */
+  .Interfaz-completa {
+    display: flex;
+    height: 100vh;   
+  }
+  
+  .lado-izquierdo {
+    background-color: #494848;
+    padding: 24px 16px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .nav-mobile{
+    display: none;
+  }
+  
+  .lado-izquierdo h3 {
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .botones-izquierda ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .botones-izquierda ul li {
+    margin-bottom: 5px;
+  }
+  
+  .botones-izquierda ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  }
+  .lado-derecho-toma-pedidos{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 12px 0 32px;
+    width: 100%;
+  }
+
+   .lado-derecho{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 8px 12px 0 32px;
+  } 
+  .encabezado-tabla {
+    padding: 20px;
+    margin-top: 120px;
+   
+  }
+  .modal-body table {
+    width: 100%;
+  }
+
+  .Tabla-recepcion table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .input-container.input-1 {
+    position: relative;
+    top: -100px;
+    margin-left: 20px;
+  }
+  .input-container.input-1 input{
+    margin-left: 20px;
+  }
+
+  .input-container.input-2{
+    position:relative;
+    top: -97px;
+  }
+
+  /* .lado-derecho h3 {
+    margin-bottom: 10px;
+  } */
+  
+  /* Estilos para la barra de tabla */
+  .Barra-tabla {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    background-color:#dcd8d8
+  }
+  .input-container {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+
+.input-container-3{
+    position: relative;
+    left: 600px;
+    top: -90px;
+}
+  
+  /* Estilos para la tabla de pedidos */
+  table {
+    /* border-collapse: collapse; */
+    padding: 50px;
+    text-align: center;
+  }
+  
+  
+  thead {
+    border-bottom: 1px solid rgb(220, 220, 220) !important;
+  }
+  
+  th,
+  td {
+    padding: 10px 4px;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilos para los botones */
+  button {
+    color: #fff !important;
+    
+  }
+  .lado-derecho .btn-editar{
+    background-color: rgb(255, 239, 12);
+  }
+  .lado-derecho .btn-editar:hover{
+    background-color: rgb(255, 220, 12);
+  }
+  .lado-derecho .btn-eliminar {
+    background-color: rgb(255, 0, 0);
+  }
+  .lado-derecho .btn-eliminar:hover{
+    background-color: rgb(255, 50, 0);
+  }
+
+ 
+
+  /* ----------------- */
+
+  .botones-izquierda {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .botones-izquierda ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .botones-izquierda ul li {
+    margin-bottom: 40px; 
+  }
+  
+  .botones-izquierda ul li a {
+    display: block;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .botones-izquierda ul li a:hover {
+    background-color: #38393a;
+  }
+
+  /* ----------------------- */
+  
+  .Pedidos-produccion {
+    text-align: center;
+    margin: 20px 20px;
+  }
+  
+  .tabla-pedidos-terminados{
+    margin-top: 20px;
+  }
+  .titulo-pedidos-terminados{
+    margin-top: 10px;
+    text-align: center;
+  }
+  .titulo-comentarios{
+    margin-top: 20px;
+    text-align: center;
+  }
+
+ 
+  /* .barra-comentarios{
+    margin-top: 10px;
+    text-align: center;
+  } */
+  /* .barra-comentarios input{
+    width: 1000px;
+    height: 200px;
+  } */
+  .bton-confirmar-pedido{
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+  .Pedidos-produccion{
+    font-size: 40px;
+  }
+
+  /* media querys */
+  
+  @media (max-width:745px) {
+    .lado-derecho .btn-editar,
+    .lado-derecho .btn-eliminar{
+      font-size: 0;
+    }
+    .lado-derecho .btn-editar::after{
+      content: url(../../media/icons/edit.svg);
+    }
+    .lado-derecho .btn-eliminar::after{
+      content: url(../../media/icons/close.svg);
+    }
+  }
+
+
+  @media (max-width:644px) {
+    .lado-derecho .btn-editar{
+      margin-bottom: 8px;
+    }
+    .Pedidos-produccion{
+      font-size: 26px;
+      margin-top: 60px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .lado-izquierdo{
+      display: none;
+    }
+    .Interfaz-completa{
+      flex-direction: column;
+    }
+    .nav-mobile{
+      display: block;
+    }
+    .nav-mobile nav{
+      background-color: #494848;
+    }
+    .nav-mobile nav .container-fluid .offcanvas{
+      background-color: #494848;
+    }
+    .lado-derecho{
+      padding: 60px 12px;
+    }
+
+  }
+
+  @media (max-width: 475px) {
+    table td{
+      padding: 6px;
+    }
+    table{
+      font-size: .875rem;
+    }
+  }

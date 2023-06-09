@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interfaz pedidos</title>
+    <link rel="stylesheet" href="./admon.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--Interfaz de Control de pedidos-->
+    <main>
+      <div class="Interfaz-completa">
+        <!-- Izquierda de interfaz -->
+        <div class="lado-izquierdo">
+          <div class="nav-menu">
+            <h3 class="menu-title">Menu</h3>
+            <div class="botones-izquierda">
+              <ul>
+                <li><a href="./Toma de pedidos.html">Toma de pedidos</a></li>
+                <li><a href="./index.html">Pedidos en producción</a></li>
+                <li>
+                  <a href="./pedidos terminados.html">Historial de pedidos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-mobile">
+          <nav class="navbar navbar-expand-sm fixed-top" data-bs-theme="dark">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="offcanvas offcanvas-start"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <h3 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    Menu
+                  </h3>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 ps-3">
+                    <li class="nav-item mb-3">
+                      <a
+                        class="nav-link"
+                        aria-current="page"
+                        href="./index.html"
+                        >Pedidos en producción</a
+                      >
+                    </li>
+                    <li class="nav-item mb-3">
+                      <a class="nav-link" href="./historia_pedidos.html"
+                        >Historial de pedidos</a
+                      >
+                    </li>
+                    <li class="nav-item mb-3">
+                      <a class="nav-link" href="./toma_pedidos.html"
+                        >Toma de pedidos</a
+                      >
+                    </li>
+                    <li class="nav-item mb-5 position-absolute bottom-0 fw-bold">
+                      <a class="nav-link" href="../inicio/menu.html"
+                        >Salir</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!--Derecha de interfaz-->
+        <div class="lado-derecho">
+          <h3 class="Pedidos-produccion">Pedidos en producción</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Pedido</th>
+                <th>Fecha</th>
+                <th>Estado</th>
+                <th>Total</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>2023-06-01</td>
+                <td>En proceso</td>
+                <td>$50.000</td>
+                <td>
+                  <button class="btn btn-editar fw-bold">Editar</button>
+                  <button class="btn btn-eliminar fw-bold">Eliminar</button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>2023-06-02</td>
+                <td>Completado</td>
+                <td>$234.00</td>
+                <td>
+                  <button class="btn btn-editar fw-bold">Editar</button>
+                  <button class="btn btn-eliminar fw-bold">Eliminar</button>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>2023-06-02</td>
+                <td>Completado</td>
+                <td>$46.000</td>
+                <td>
+                  <button class="btn btn-editar fw-bold">Editar</button>
+                  <button class="btn btn-eliminar fw-bold">Eliminar</button>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>2023-06-02</td>
+                <td>Completado</td>
+                <td>$123.400</td>
+                <td>
+                  <button class="btn btn-editar fw-bold">Editar</button>
+                  <button class="btn btn-eliminar fw-bold">Eliminar</button>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>2023-06-02</td>
+                <td>Completado</td>
+                <td>$75.000</td>
+                <td>
+                  <button class="btn btn-editar fw-bold">Editar</button>
+                  <button class="btn btn-eliminar fw-bold">Eliminar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
