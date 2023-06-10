@@ -84,11 +84,13 @@ body {
 .title-section{
   font-size: 1.5rem;
   display: flex;
-  margin-left: 2.25rem;
-  font-weight: bold;
+  margin-left: 3.125rem;
 }
 .title-section p{
-  margin: 1rem 0;
+  margin: 1rem 0 1.5rem 0;
+  background-color: rgb(240, 240, 240);
+  padding: .5rem;
+  border-radius: 10px;
 }
 
 /* estilos para la card */
@@ -127,7 +129,8 @@ body {
   margin: 0;
   opacity: 0.5;
   max-height: 4rem;
-  overflow:scroll;
+  overflow:auto;
+  font-size: .875rem;
 }
 
 /* estilos para el boton de añadir */
@@ -181,6 +184,9 @@ body {
   .menu {
     gap: 2rem 0.9rem;
   }
+  .title-section{
+    margin-left: .8125rem;
+  }
   /* estilos para el boton de añadir */
   .card-menu .btn-card{
     font-size: 0;
@@ -208,7 +214,6 @@ body {
     font-size: 2.2rem;
   }
 
-  /* estilos para el aside */
   
 }
 
