@@ -16,53 +16,43 @@
   <body>
     <div class="container d-flex justify-content-center align-items-center">
       <div class="contenedor_principal bg-light rounded p-5 pt-4 shadow">
-        <a href="./menu.html" class="text-decoration-none">Volver</a>
-        <div class="title text-center mb-4">
-          <span class="h1 fw-bold">Login</span>
+        <a href="./menu.html">Volver</a>
+        <div class="title text-center mb-4 mt-2">
+          <span class="h1 fw-bold">Iniciar sesión</span>
         </div>
         <div class="contenedor_formulario">
           <form action="login">
-            <div class="nombre_usuario mb-4">
-              <label for="nombre" class="form-label opacity-75"
-                >Ingrese su nombre</label
-              >
+            <div class="form-floating mb-3">
               <input
                 type="text"
-                maxlength="10"
-                id="nombre"
-                name="nombre"
                 class="form-control"
+                id="floatingInput"
                 placeholder="Nombre"
-                required
               />
+              <label for="floatingInput">Nombre</label>
             </div>
-            <div class="Contraseña mb-4">
-              <label for="contraseña" class="form-label opacity-75"
-                >Ingresa tu contraseña</label
-              >
+
+            <div class="form-floating mb-4">
               <input
                 type="password"
-                maxlength="10"
                 class="form-control"
-                id="contraseña"
-                name="contraseña"
-                placeholder="******"
-                required
+                id="floatingPassword"
+                placeholder="Contraseña"
               />
+              <label for="floatingPassword">Contraseña</label>
             </div>
+
             <div class="boton_enviar d-grid">
-              <button type="submit" class="btn btn-primary bg-gradient">
-                Ingresar
-              </button>
+              <a href="./menu.html" class="btn btn-primary">Ingresar</a>
             </div>
             <div class="mt-3 text-center d-flex flex-column">
               <p>
                 ¿Aun no te has registrado?
-                <a href="./registro.html" class="text-decoration-none mb-2"
-                >Registrate</a
+                <a href="./registro.html" class=" mb-2"
+                  >Registrate</a
                 >
               </p>
-              <a href="../admon/index.html" class="text-decoration-none"
+              <a href="../admon/index.html" class=""
                 >Administrador</a
               >
             </div>
