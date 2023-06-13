@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu</title>
+    <title>Postres</title>
     <link rel="stylesheet" href="./estilos/menu.css" />
     <link rel="stylesheet" href="./estilos/style-navbar.css" />
     <link
@@ -15,8 +14,7 @@
     />
   </head>
   <body>
-    <!-- creacion del menu para el proyecto -->
-    <!-- navbar del menu -->
+    <!-- navbar de la pagina -->
     <div class="atras">
       <div class="menu-contenedor">
         <a href="./menu.html" class="logo">
@@ -29,14 +27,18 @@
         >
         <input type="checkbox" id="menu" name="menu" placeholder="0" />
         <label for="menu">
-          <img src="../../media/icons/icon_menu.svg" class="menu-icono" alt="" />
+          <img
+            src="../../media/icons/icon_menu.svg"
+            class="menu-icono"
+            alt=""
+          />
         </label>
         <nav class="contenedor-nav">
           <ul>
             <li><a href="./login.html">Ingresar</a></li>
             <li><a href="./menu.html">Plato fuerte</a></li>
             <li><a href="./bebidas.html">Bebidas</a></li>
-            <li><a href="./postres.html">Postres</a></li>
+            <li><a href="#postres">Postres</a></li>
           </ul>
           <div class="icono-carrito">
             <img
@@ -49,8 +51,6 @@
     </div>
 
     <main class="container-fluid d-flex flex-column">
-      <!-- aside del menu para las promociones -->
-
       <aside class="promociones">
         <div class="container d-flex justify-content-center">
           <div
@@ -128,24 +128,23 @@
       </header>
 
       <section class="section-menu">
-        <!-- titulo de la seccion -->
-        <div class="title-section opacity-75 ">
-          <p>Plato fuerte</p>
+        <div class="title-section opacity-75">
+          <p>Postres</p>
         </div>
-        <!-- seccion de platos fuertes -->
-        <div class="menu" id="platos-fuertes">
+
+        <div class="menu" id="postres">
           <!-- componentes del menu -->
           <div class="card-menu">
             <!-- img del producto -->
             <div class="img-card">
-              <img src="../../media/img/plato-fuerte/burguer1.jpg" alt="burger" />
+              <img src="../../media/img/postres/postre1.jpg" alt="postre1" />
             </div>
             <!-- informacion del producto -->
             <div class="card-info">
-              <p>hamburguesa triple queso, lo mejor del municipio!!!</p>
-              <!-- botton para añadir al carrito responsive -->
+              <p>Torta de tres leches con cubierta de chocolate y una cereza</p>
+              <!-- boton para añadir al carrito responsive -->
               <div class="content-precio-btn">
-                <span>$12.000</span>
+                <span>$8.000</span>
                 <button class="btn-card">Añadir</button>
               </div>
             </div>
@@ -153,14 +152,14 @@
           <div class="card-menu">
             <!-- img del producto -->
             <div class="img-card">
-              <img src="../../media//img/plato-fuerte/perrito2.jpg" alt="perrito2" />
+              <img src="../../media/img/postres/postre2.jpg" alt="postre2" />
             </div>
             <!-- informacion del producto -->
             <div class="card-info">
-              <p>perro caserito acompañado de papas y salsas al gusto</p>
+              <p>postre de fresa, cubierto de una maravillosa salsa de fresa</p>
               <!-- boton para añadir al carrito responsive -->
               <div class="content-precio-btn">
-                <span>$12.000</span>
+                <span>$6.000</span>
                 <button class="btn-card">Añadir</button>
               </div>
             </div>
@@ -168,14 +167,14 @@
           <div class="card-menu">
             <!-- img del producto -->
             <div class="img-card">
-              <img src="../../media/img/plato-fuerte/burger2.jpg" alt="burger2" />
+              <img src="../../media/img/postres/postre3.jpg" alt="postre3" />
             </div>
             <!-- informacion del producto -->
             <div class="card-info">
-              <p>Hamburgesa especial con el toque secreto </p>
+              <p>Flan cubierto de chocolate y cereal</p>
               <!-- boton para añadir al carrito responsive -->
               <div class="content-precio-btn">
-                <span>$12.000</span>
+                <span>$8.000</span>
                 <button class="btn-card">Añadir</button>
               </div>
             </div>
@@ -183,17 +182,14 @@
           <div class="card-menu">
             <!-- img del producto -->
             <div class="img-card">
-              <img src="../../media/img/plato-fuerte/carnita.jpg" alt="carnita" />
+              <img src="../../media/img/postres/postre4.jpg" alt="postre4" />
             </div>
             <!-- informacion del producto -->
             <div class="card-info">
-              <p>
-                carnita a las brasas, jugosa y con los mejores cortes de la
-                cuidad
-              </p>
+              <p>Brownie con helado y salsa de chocolate</p>
               <!-- boton para añadir al carrito responsive -->
               <div class="content-precio-btn">
-                <span>$12.000</span>
+                <span>$9.000</span>
                 <button class="btn-card">Añadir</button>
               </div>
             </div>
@@ -201,17 +197,14 @@
           <div class="card-menu">
             <!-- img del producto -->
             <div class="img-card">
-              <img src="../../media/img/plato-fuerte/perrito.jpg" alt="perrito" />
+              <img src="../../media/img/postres/postre5.jpg" alt="postre5" />
             </div>
             <!-- informacion del producto -->
             <div class="card-info">
-              <p>
-                perrito triple salchicha con la sason de la abuela y la salsa
-                especial...
-              </p>
+              <p>postre de chocolate con cubierta de mora</p>
               <!-- boton para añadir al carrito responsive -->
               <div class="content-precio-btn">
-                <span>$12.000</span>
+                <span>$7.000</span>
                 <button class="btn-card">Añadir</button>
               </div>
             </div>
@@ -219,23 +212,24 @@
           <div class="card-menu">
             <!-- img del producto -->
             <div class="img-card">
-              <img src="../../media/img/plato-fuerte/sanduche.jpg" alt="sanduche" />
+              <img src="../../media/img/postres/postre6.jpg" alt="postre6" />
             </div>
             <!-- informacion del producto -->
             <div class="card-info">
-              <p>sanduche con pan artesanal, los ingredientes mas frescos</p>
+              <p>Postre napolitano v2.0</p>
               <!-- boton para añadir al carrito responsive -->
               <div class="content-precio-btn">
-                <span>$12.000</span>
+                <span>$7.500</span>
                 <button class="btn-card">Añadir</button>
               </div>
             </div>
           </div>
         </div>
-        
-      </section>
 
+
+      </section>
     </main>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
