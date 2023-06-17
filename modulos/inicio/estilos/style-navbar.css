@@ -1,16 +1,14 @@
 .atras {
   height: 75px;
   background-color: rgb(255, 255, 255);
-  margin-top: 0.625rem;
-  margin-bottom: 1.5rem;
-  /* border-bottom: 1px solid rgb(207, 207, 207); */
 }
 .menu-contenedor {
-    border-bottom: 1px solid rgb(207, 207, 207);
+  
   color: white;
   width: 100%;
   margin: 0 auto;
-  position: absolute;
+  top: 0%;
+  position: fixed;
   left: 0;
   right: 0;
   padding: 0 0.9rem;
@@ -19,14 +17,20 @@
   justify-content: space-between;
   z-index: 1000;
   height: 75px;
+  background-color: rgb(255 44 44);
 }
 .logo {
   font-size: 24px;
-  color: black;
+  color: white;
   font-weight: bold;
   margin-left: 0;
   text-decoration: none;
+  
 }
+.menu-contenedor .contenedor-nav ul{
+  padding-left: 0;
+}
+
 .menu-contenedor .contenedor-nav ul li {
   position: relative;
   float: left;
@@ -37,7 +41,7 @@
   font-size: 16px;
   font-weight: bold;
   padding: 8px;
-  color: black;
+  color: white;
   display: block;
   text-decoration: none;
   margin-left: 8px;
@@ -45,7 +49,7 @@
   transition: all 150ms ease;
 }
 .menu-contenedor .contenedor-nav ul li a:hover {
-  background-color: rgb(242, 242, 242);
+  
   border-radius: 6px;
 }
 #menu {
@@ -55,6 +59,8 @@
 .menu-icono {
   margin-right: 32px;
   transform: rotate(180deg);
+
+  
 }
 
 .menu-contenedor label {
@@ -63,8 +69,7 @@
 }
 
 .icono-carrito {
-  width: 50px;
-  background-color: #ffffff;
+  width: 35px;
   align-items: center;
   display: flex;
   border-radius: 60px;
@@ -77,11 +82,13 @@
   /* margin-right: 20px; */
 }
 .imgLogo {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
+  background-color: #f26856;
+  border-radius: 70px;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 700px) {
   
   .menu-contenedor label {
     display: initial;
@@ -102,6 +109,7 @@
   .menu-contenedor .contenedor-nav ul li a{
     padding: 6px 18px 6px 12px;
     margin: 0 30px 12px 0;
+    color: black;
   }
 
   #menu:checked ~ .contenedor-nav {

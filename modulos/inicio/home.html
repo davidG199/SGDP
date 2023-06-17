@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./estilos/menu.css" />
+    <link rel="stylesheet" href="./estilos/style-navbar.css" />
+    <link rel="stylesheet" href="./estilos/estilos-new.css">
+    <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- navbar de la pagina -->
+    <div class="atras">
+      <div class="menu-contenedor">
+        <a href="./menu.html" class="logo">
+          <img
+            class="imgLogo"
+            src="../../media/images-navbar/iconos/logo.jpg"
+            alt="logo"
+          />
+          BURGERS</a
+        >
+        <input type="checkbox" id="menu" name="menu" placeholder="0" />
+        <label for="menu">
+          <img
+            src="../../media/icons/icon_menu.svg"
+            class="menu-icono"
+            alt=""
+          />
+        </label>
+        <nav class="contenedor-nav text-white">
+          <ul>
+            <li><a href="./home.html">Inicio</a></li>
+            <li><a href="./menu.html">Plato fuerte</a></li>
+            <li><a href="./bebidas.html">Bebidas</a></li>
+            <li><a href="#postres">Postres</a></li>
+            <li><a href="./login.html">Ingresar</a></li>
+          </ul>
+          <div class="icono-carrito">
+            <img
+              src="../../media/images-navbar/iconos/icono-carrito.svg"
+              alt="carrito-nav"
+            />
+          </div>
+        </nav>
+      </div>
+    </div>
+
+
+
+    <div class="carrousel">
+        <div class="conteCarrousel">
+            <div class="itemCarrousel" id="itemCarrousel-1">
+                <div class="itemCarrouselTarjeta">
+                    <img src="../../media/img/promociones/banner-new1.jpg" alt="promo1">
+
+                </div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-3">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#itemCarrousel-2">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrousel" id="itemCarrousel-2">
+                <div class="itemCarrouselTarjeta">
+                    <img src="../..//media/img/promociones/banner-new2.jpg" alt="">
+                </div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-1">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#itemCarrousel-3">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrousel" id="itemCarrousel-3">
+                <div class="itemCarrouselTarjeta">
+                    <img src="../..//media/img/promociones/banner-new4.jpg" alt="">
+                </div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-2">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#itemCarrousel-1">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    
+
+    <div class="contenedorCupones">
+      
+        <p class="textoCupones">Cupones</p>
+      
+      <div class="cupones">
+        <img src="../..//media/img/cupones/cupon1.jpeg" alt="">
+        <img src="../..//media/img/cupones/cupon2.jpeg" alt="">
+        <img src="../..//media/img/cupones/cupon3.jpeg" alt="">
+      </div>
+    </div>
+
+    <div class="container p-5 my-5 shadow ubicaciones">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <p class="h3 mb-3">Ubicaciones</p>
+          <p class="my-4">Encuentra nuestros restaurantes mas cercanos</p>
+          <input 
+          placeholder="Ingresa tu Ubicación"
+          type="text"
+          class="p-2 shadow border-0 rounded-3 mb-5">
+
+        </div>
+        <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+          <img src="../../media/img/burguerFhoto.jpg" alt="muñeco de hamburgesa" width="">
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <footer>
+      <div class="container-fluid">
+          <div class="row p-5 text-white">
+  
+              <div class="col-12 col-md-6 col-lg-3">
+                  <p class="h3">BURGUERS</p>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                  <p class="h5 mb-2">Informacion</p>
+                  <div class="mb-2">
+                      <a href="#" class="text-white text-decoration-none">Ubicacion</a>
+                  </div>
+                  <div class="mb-2">
+                      <a href="#"class="text-white text-decoration-none">Contactanos</a>
+                  </div>
+                  <div class="mb-2">
+                      <a href="#"class="text-white text-decoration-none">Redes sociales</a>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                  <p class="h5 mb-2">Ayuda</p>
+                  <div class="mb-2">
+                      <a href="#" class="text-white text-decoration-none">Legales</a>
+                  </div>
+                  <div class="mb-2">
+                      <a href="#"class="text-white text-decoration-none">Factura electronica</a>
+                  </div>
+                  <div class="mb-2">
+                      <a href="#"class="text-white text-decoration-none">Politica de privacidad</a>
+                  </div>
+                  <div class="mb-2">
+                      <a href="#"class="text-white text-decoration-none">Trabaja con nosotros</a>
+                  </div>
+                  
+                  <div class="mb-2">
+                      <a href="#"class="text-white text-decoration-none">Mas informacion</a>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                  <p class="h5 mb-2">Mi hamburguesa</p>
+                  <div class="mb-2">
+                      <a href="#" class="text-white text-decoration-none">ORDENA EN LINEA</a>
+                  </div>
+                  <div class="mb-2">
+                      <a href="#"class="text-white text-decoration-none">Menu</a>
+                  </div>
+                  <div class="mb-2">
+                      <a href="#"class="text-white text-decoration-none">Cupones</a>
+                  </div>
+                  <div class="mb-2">
+                      <a href="#"class="text-white text-decoration-none">Terminos y condiciones</a>
+                  </div>
+              </div>
+  
+          </div>
+      </div>
+  </footer>
+    
+     <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"
+    ></script>  
+</body>
+</html>
